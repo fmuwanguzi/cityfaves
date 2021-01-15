@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content%}
+    {% for city in cities %}
+        <p>City: {{ city.name }}</p>
+        <p>Country: {{ city.country }}</p>
+        <p>Known for: {{ city.knownfor }}</p>
+        <hr />
+    {% endfor %}
+{% endblock %}
